@@ -16,7 +16,7 @@ public class HelloWorldApiTestSteps extends CucumberdemoApplicationTests {
 
     @When("^the hello world api is invoked$")
     public void theHelloWorldApiIsInvoked() throws Throwable {
-        response = given().relaxedHTTPSValidation().when().get("http://localhost:8080/message");
+        response = given().relaxedHTTPSValidation().when().get("http://localhost:8085/message");
     }
 
     @Then("^it should return (\\d+) response code$")
